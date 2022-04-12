@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 
 export default function Navbar() {
   return (
-    <nav className="navbar navbar-inverse">
-      <div className="container-fluid">
+    <div className="container-fluid">
+      <nav className="navbar navbar-inverse">
         <ul className="flex-row my-3 nav navbar-nav">
           <li className="nav-item">
             <Link id="len1" className="hoverable" to="/">
@@ -27,7 +27,7 @@ export default function Navbar() {
             </Link>
           </li>
         </ul>
-      </div>
-    </nav>
+      </nav>
+    </div>
   );
 }

@@ -1,17 +1,14 @@
-import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 import "./App.scss";
 
-import Navbar from "./components/Navbar";
 import MainRoutes from "./routes";
 
-function App() {
+export default function App() {
   return (
     <BrowserRouter>
-      <MainRoutes>
-        <Navbar />
-      </MainRoutes>
+      <div className="container-fluid">
+        <MainRoutes />
+      </div>
     </BrowserRouter>
   );
 }
-
-export default App;

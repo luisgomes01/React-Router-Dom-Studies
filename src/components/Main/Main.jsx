@@ -2,7 +2,7 @@ import "./Main.scss";
 
 export default function Main({ children }) {
   return (
-    <main className="container-fluid d-flex align-items-center justify-content-center main-section">
+    <main className="container-fluid position-relative main-section">
       {children}
     </main>
   );

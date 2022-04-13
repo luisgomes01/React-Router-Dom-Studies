@@ -17,6 +17,8 @@ export default function MainRoutes() {
           <Route path="/about" element={<About />} />
           <Route path="/portfolio/:id" element={<Portfolio />} />
           <Route path="/contact" element={<Contact />} />
+
+          <Route path="*" element={<h1>NOT FOUND</h1>} />
         </Routes>
       </Main>
     </>

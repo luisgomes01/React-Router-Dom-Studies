@@ -1,10 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "./Navbar.scss";
 
 export default function Navbar() {
   return (
-    <div className="container-fluid">
-      <nav className="navbar navbar-inverse">
+    <nav className="navbar">
+      <div className="container-fluid">
         <ul className="flex-row my-3 nav navbar-nav">
           <li className="nav-item">
             <Link id="len1" className="hoverable" to="/">
@@ -27,7 +28,7 @@ export default function Navbar() {
             </Link>
           </li>
         </ul>
-      </nav>
-    </div>
+      </div>
+    </nav>
   );
 }

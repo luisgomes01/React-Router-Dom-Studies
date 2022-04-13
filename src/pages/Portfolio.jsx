@@ -1,4 +1,4 @@
-import React from "react";
+import { MAIN_SECTION_TEXT, MAIN_SECTION_TEXT2 } from "../utils/constants";
 
 export default function Portfolio() {
   return (
@@ -6,10 +6,9 @@ export default function Portfolio() {
       <div className="page-title">
         <h2>My Portfolio</h2>
         <p className="lead">
-          Based on Hover.css, the goal of this pen is to create a simple
-          navigation bar <br />
-          that can be easily reused in both mobile and native displays. Mouse
-          over the nav text for animation!
+          {MAIN_SECTION_TEXT}
+          <br />
+          {MAIN_SECTION_TEXT2}
         </p>
       </div>
     </div>

@@ -15,13 +15,13 @@ export default function MainRoutes() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />}>
-            <Route path="/about/luis" element={<h1>About Luís</h1>} />
-            <Route path="/about/clarice" element={<h1>About Clarice</h1>} />
-            <Route path="/about/thaynam" element={<h1>About Thaynam</h1>} />
-            <Route path="/about/jair" element={<h1>About Jair</h1>} />
-            <Route path="/about/be" element={<h1>About Bê</h1>} />
-            <Route path="/about/jao" element={<h1>About Jão</h1>} />
-            <Route path="/about/caio" element={<h1>About Caio</h1>} />
+            <Route path="/about/luis" element={<About />} />
+            <Route path="/about/clarice" element={<About />} />
+            <Route path="/about/thaynam" element={<About />} />
+            <Route path="/about/jair" element={<About />} />
+            <Route path="/about/be" element={<About />} />
+            <Route path="/about/jao" element={<About />} />
+            <Route path="/about/caio" element={<About />} />
           </Route>
           <Route path="/portfolio/:id" element={<Portfolio />} />
           <Route path="/portfolio" element={<Portfolio />} />

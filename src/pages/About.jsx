@@ -1,7 +1,66 @@
 import { MAIN_SECTION_TEXT, MAIN_SECTION_TEXT2 } from "../utils/constants";
-import { Link, Outlet } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
+import Button from "../components/Button";
 
 export default function About() {
+  const location = useLocation();
+
+  const navigate = useNavigate();
+
+  if (location.pathname === "/about/luis") {
+    return (
+      <>
+        <h1 className="mt-5">About Luís</h1>
+        <Button action={() => navigate("/about")} value="Head back" />
+      </>
+    );
+  }
+
+  if (location.pathname === "/about/clarice") {
+    return (
+      <>
+        <h1 className="mt-5">About Clarice</h1>
+        <Button action={() => navigate("/about")} value="Head back" />
+      </>
+    );
+  }
+
+  if (location.pathname === "/about/be") {
+    return (
+      <>
+        <h1 className="mt-5">About Bê</h1>
+        <Button action={() => navigate("/about")} value="Head back" />
+      </>
+    );
+  }
+
+  if (location.pathname === "/about/jair") {
+    return (
+      <>
+        <h1 className="mt-5">About Jair</h1>
+        <Button action={() => navigate("/about")} value="Head back" />
+      </>
+    );
+  }
+
+  if (location.pathname === "/about/jao") {
+    return (
+      <>
+        <h1 className="mt-5">About Jão</h1>
+        <Button action={() => navigate("/about")} value="Head back" />
+      </>
+    );
+  }
+
+  if (location.pathname === "/about/caio") {
+    return (
+      <>
+        <h1 className="mt-5">About Caio</h1>
+        <Button action={() => navigate("/about")} value="Head back" />
+      </>
+    );
+  }
+
   return (
     <div id="what-the-hell-is-this">
       <div className="page-title">
@@ -32,7 +91,6 @@ export default function About() {
         <br />
         {MAIN_SECTION_TEXT2}
       </p>
-      <Outlet />
     </div>
   );
 }
